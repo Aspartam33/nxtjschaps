@@ -1,7 +1,11 @@
+"use client"
 import style from "./contact.module.css"
 import Image from "next/image"
 const ContactPage = () =>{
+    let a = Math.random()
+    console.log(a)
     return(
+      
         <div className={style.container}>
             <div className={style.imgContainer}>
                 <Image src="/contact.png"  className={style.img} alt="" width={500} height={300}/>
@@ -12,7 +16,7 @@ const ContactPage = () =>{
                     <input type="text" placeholder="Correo electrónico" />
                     <input type="text" placeholder="Número de teléfono"/>
                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button type="submit">Enivar</button>
+                    <button type="submit" onClick={()=>console.log("clickeado")}>Enivar</button>
                 </form>
             </div>
         </div>
