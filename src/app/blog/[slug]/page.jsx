@@ -1,16 +1,17 @@
 import Image from "next/image"
 import style from "./singlePost.module.css"
-const SinglePostPage = () =>{
+const SinglePostPage = ({params,searchParams}) =>{
+    console.log(params)
     return(
         <div className={style.container}>
             <div className={style.imgContainer}>
-                <Image src="https://img.freepik.com/foto-gratis/familia-joven-sus-hijos-casa-divirtiendose_1303-20999.jpg?t=st=1721747075~exp=1721750675~hmac=f45ed84c684c24194161e556ff69ef550abd273f97c1916eafcdda0eb1d305cc&w=996" 
+                <Image src="https://img.freepik.com/foto-gratis/persona-cerca-planta-energia-alternativa_23-2149192730.jpg?t=st=1721758891~exp=1721762491~hmac=8547652dc7989993a80b0554a00051fd962b4b00487ae1011cb2c561bf3b9c03&w=996" 
                 className={style.img} alt="" fill/>
             </div>
             <div className={style.textContainer}>
                 <h1 className={style.title}>Titulo</h1>
                 <div className={style.detail}>
-                    <Image className={style.avatar} src="https://img.freepik.com/foto-gratis/familia-joven-sus-hijos-casa-divirtiendose_1303-20999.jpg?t=st=1721747075~exp=1721750675~hmac=f45ed84c684c24194161e556ff69ef550abd273f97c1916eafcdda0eb1d305cc&w=996" 
+                    <Image className={style.avatar} src="https://img.freepik.com/foto-gratis/persona-cerca-planta-energia-alternativa_23-2149192730.jpg?t=st=1721758891~exp=1721762491~hmac=8547652dc7989993a80b0554a00051fd962b4b00487ae1011cb2c561bf3b9c03&w=996" 
                     alt="" height={50} width={50}/>
                     <div className={style.detailText}>
                     <span className={style.detailTitle}>Autor</span>
