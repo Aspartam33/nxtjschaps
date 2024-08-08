@@ -37,8 +37,7 @@ className={style.img} alt="" fill/>
                 <h1 className={style.title}>{post.title}</h1>
                 <div className={style.detail}>
               
-                    <Image className={style.avatar} src="https://img.freepik.com/foto-gratis/persona-cerca-planta-energia-alternativa_23-2149192730.jpg?t=st=1721758891~exp=1721762491~hmac=8547652dc7989993a80b0554a00051fd962b4b00487ae1011cb2c561bf3b9c03&w=996" 
-                    alt="" height={50} width={50}/>
+                  
                     <Suspense fallback={<div>Cargando ...</div>}>
                      <PostUser userId = {post.userId}/>
                     </Suspense>
